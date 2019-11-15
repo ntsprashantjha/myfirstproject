@@ -1,0 +1,83 @@
+package com.nts.grb.model;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.envers.Audited;
+
+import com.nts.mrb.model.AuditClass;
+
+@Entity
+@Table(name = "grb1_circular_details")
+@Audited
+@EntityListeners(AuditClass.class)
+public class CircularData {
+	@Id
+	@GeneratedValue
+	private int id;
+	@UpdateTimestamp
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "update_date", length = 10)
+	private Date updatedate;
+	@Column(name = "circular_description", length = 255)
+	private String circularDesc;
+	public String getCircularDesc() {
+		return circularDesc;
+	}
+
+	public void setCircularDesc(String circularDesc) {
+		this.circularDesc = circularDesc;
+	}
+
+	@Column(name = "circular_base_code", columnDefinition = "longtext")
+	private String circulerfile;
+	@Column(name = "circular_doc_type", length = 50)
+	private String circularfiletype;
+	@Column(name = "circular_size", length = 50)
+	private int circularsize;
+
+	public String getCircularfiletype() {
+		return circularfiletype;
+	}
+
+	public void setCircularfiletype(String circularfiletype) {
+		this.circularfiletype = circularfiletype;
+	}
+
+	public int getCircularsize() {
+		return circularsize;
+	}
+
+	public void setCircularsize(int circularsize) {
+		this.circularsize = circularsize;
+	}
+
+	public String getCirculerfile() {
+		return circulerfile;
+	}
+
+	public void setCirculerfile(String circulerfile) {
+		this.circulerfile = circulerfile;
+	}
+
+	public String getOfficerinfo() {
+		return officerinfo;
+	}
+
+	public void setOfficerinfo(String officerinfo) {
+		this.officerinfo = officerinfo;
+	}
+
+	@Column(name = "officer_info", length = 150)
+	private String officerinfo;
+
+}

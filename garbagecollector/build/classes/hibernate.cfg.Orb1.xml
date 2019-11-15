@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">nirbhay07</property>
+		<property name="hibernate.connection.url">jdbc:mysql://ethicalnirbhaydb.caafl2zdjl8v.ap-south-1.rds.amazonaws.com:3306/garbage_record_book</property>
+		<property name="hibernate.connection.username">nirbhay07</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.nts.orb1.model.SludgeManualC11_4Orb1" />
+		<mapping
+			class="com.nts.orb1.model.SludgeDisposalShoreConnectionC12_1Orb1" />
+		<mapping
+			class="com.nts.orb1.model.SludgeTransferBwTwoTanksC12_2Orb1" />
+		<mapping class="com.nts.orb1.model.SludgeIncineration12_3Orb1" />
+		<mapping
+			class="com.nts.orb1.model.SludgeTankEvapWater12_4Orb1" />
+		<mapping
+			class="com.nts.orb1.model.SludgeBurningInBoilerC12_4Orb1" />
+		<mapping
+			class="com.nts.orb1.model.SludgeFuelRegenerationC12_4Orb1" />
+		<mapping
+			class="com.nts.orb1.model.SludgeDrainWtrFrmSludtoBlidTankC12_2Orb1" />
+		<mapping class="com.nts.orb1.model.AutomaticEntryOrb1" />
+		<mapping class="com.nts.orb1.model.RetendationOfBilgeOrb1" />
+		<mapping class="com.nts.orb1.model.CircularDataOrb1" />
+		<mapping class="com.nts.orb1.model.VoluntaryRecordingsEquipTestOrb1" />
+		<mapping class="com.nts.orb1.model.VoluntaryRecordingsCalibrationOrb1" />
+		<mapping class="com.nts.orb1.model.VoluntaryRecordingsOwsOrb1" />
+		<mapping class="com.nts.orb1.model.NewlyJoinedEngineerOrb1" />
+		<mapping class="com.nts.orb1.model.Access_Right_ORB1" />
+		<mapping class="com.nts.orb1.model.MissedEntryOrb1" />
+		<mapping class="com.nts.orb1.model.DailyTankSouningSheetOrb1" />
+		<mapping class="com.nts.orb1.model.TLDInventoryOfSludgeOrb1" />
+		<mapping class="com.nts.orb1.model.BligeERBwellToBtankD13Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BilgeDisposalBwBTankToStankD13Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BilgeDisposalShoreConnectionD13Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BilgeTransferBwTwoTanksD13Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BilgePumpingOverboardThroughOWSTankD13Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BilgePumpingOverboardThroughOWSBWellD13Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BilgePumpingOverboardThroughEquipAutoD16_18Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BligeERBwellToBtankAutoD17_18Orb1" />
+		<mapping
+			class="com.nts.orb1.model.FailureOilFltrEquipmentF19_20_21Orb1" />
+		<mapping
+			class="com.nts.orb1.model.RestorationOfFaultyEquipmentF19_20_21Orb1" />
+		<mapping
+			class="com.nts.orb1.model.AccidentalPollutionG22_25Orb1" />
+		<mapping class="com.nts.orb1.model.CargoHoldBTanktoBTankOrb1" />
+		<mapping class="com.nts.orb1.model.FuelOilBunkeringH26Orb1" />
+		<mapping
+			class="com.nts.orb1.model.FuelOilBunkeringTankDetailsOrb1" />
+		<mapping
+			class="com.nts.orb1.model.BulkLubricatingOilBunkeringH26Orb1" />
+		<mapping
+			class="com.nts.orb1.model.BulkLubricatingOilBunkeringTankDetailsOrb1" />
+		<mapping class="com.nts.orb1.model.DeBunkeringOfFuelOil" />
+		
+		<mapping class="com.nts.orb1.model.DeBunkringOfFuelOilTnkDet" />
+		<mapping class="com.nts.orb1.model.TransferSludgeToDeckCargoSlopTank_Entity" />
+		<mapping class="com.nts.orb1.model.TransferBilgeToDeckCargoSlopTank_Entity" />
+		<mapping class="com.nts.orb1.model.SealingOfMarpolAnnex1RelatedValueOrEquipmentEntity" />
+		<mapping class="com.nts.orb1.model.BreakingOfMarpolAnnex1RelatedValueOrEquipmentEntity" />
+		<mapping class="com.nts.orb1.model.EntryUnderCodeEntity" />
+	</session-factory>
+</hibernate-configuration>

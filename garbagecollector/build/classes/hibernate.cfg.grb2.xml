@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">nirbhay07</property>
+		<property name="hibernate.connection.url">jdbc:mysql://ethicalnirbhaydb.caafl2zdjl8v.ap-south-1.rds.amazonaws.com:3306/garbage_record_book</property>
+		<property name="hibernate.connection.username">nirbhay07</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.nts.grb2.model.DischargeToAshore2" />
+		<mapping class="com.nts.grb2.model.DischargeToSeaStartDeckWashing" />
+		<mapping class="com.nts.grb2.model.DischargeToSeaStopDeckWashing" />
+		<mapping class="com.nts.grb2.model.DischargeToSeaStartDeckWashing_Acc" />
+		<mapping class="com.nts.grb2.model.DischargeToSeaStopDeckWashing_Acc" />
+		<mapping class="com.nts.grb2.model.CircularData2" />
+		<mapping class="com.nts.grb2.model.Access_Right_GRB2" />
+    </session-factory>
+</hibernate-configuration>
